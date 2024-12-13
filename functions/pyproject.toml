@@ -1,0 +1,11 @@
+[project]
+name = "pubsub-demo"
+version = "0.1.0"
+description = "Demo data collection app using Google Cloud Pub/Sub, deployed on Google Cloud Run functions"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-cloud-pubsub>=2.27.1",
+    "functions-framework==3.*",
+    "google-genai",
+]
