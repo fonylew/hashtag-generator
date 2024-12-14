@@ -35,7 +35,43 @@ main {
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-    width: 400px; /* Adjust width as needed */
+    width: 90%; /* Changed from fixed width */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Add media queries for mobile responsiveness */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 16px; /* Prevent zoom on mobile */
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 15px;
+    }
+
+    /* Adjust modal for mobile */
+    .modal-content {
+        width: 90%;
+        margin: 30% auto;
+    }
+}
+
+/* Add viewport padding protection */
+@media screen and (max-width: 320px) {
+    .form-container {
+        padding: 10px;
+    }
 }
 
 .form-group {
