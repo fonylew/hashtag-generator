@@ -58,7 +58,7 @@ def publish(request):
         message = None
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash-exp",
+        model="gemini-2.5-flash",
         contents=f'Please classify the message "{message}" into array of appropriate hashtags without hash symbol as concise as possible, no more than five. If the message is a question, please put "question" in the hashtag . The response should be strings delimited by comma without any other special character except comma, do not put new line symbol. Strictly as follow hashtag1,hashtag2,..',
     )
 
